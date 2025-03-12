@@ -1,0 +1,11 @@
+.textArea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Optional: Adds spacing */
+    width: 50%;
+    color: white;
+}
+
+.full-width {
+    width: 100%;
+}

@@ -1,0 +1,11 @@
+<mat-form-field class="full-width">
+    <div class="textArea">
+        <textarea matInput rows="8" [(ngModel)]="enteredValue"></textarea>
+        
+      </div>
+</mat-form-field>
+<button style="width: 100%;" (click)="addPost()">Submit</button>
+
+  <p *ngIf="newPost"> {{ newPost }} </p> 
+
+  
