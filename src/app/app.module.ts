@@ -22,7 +22,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
