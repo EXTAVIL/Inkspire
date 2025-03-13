@@ -1,11 +1,14 @@
-<mat-form-field class="full-width">
-    <div class="textArea">
-        <textarea matInput rows="8" [(ngModel)]="enteredValue"></textarea>
-        
-      </div>
-</mat-form-field>
-<button style="width: 100%;" (click)="addPost()">Submit</button>
 
-  <p *ngIf="newPost"> {{ newPost }} </p> 
+  <!-- <mat-form-field class="full-width">
+    <div class="textArea">
+        <textarea matInput rows="8" [(ngModel)]="enteredValue"></textarea>              
+      </div>
+</mat-form-field> -->
+<mat-form-field class="full-width" appearance="fill">
+  <mat-label>Leave your thoughts here....</mat-label>
+  <textarea matInput rows="8" [(ngModel)]="enteredValue" placeholder="Ex. It makes me feel..."></textarea>
+</mat-form-field>
+<button mat-flat-button class="sub-button" (click)="addPost()">Submit</button>
+<p *ngIf="newPost"> {{ newPost }} </p> 
 
   
