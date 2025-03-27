@@ -11,13 +11,15 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { PostListPage } from './posts/post-list/post-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { TrimTextPipe } from './pipes/trim-tex.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCreatePage,
     HeaderComponent,
-    PostListPage
+    PostListPage,
+    TrimTextPipe
   ],
   imports: [
     BrowserModule,

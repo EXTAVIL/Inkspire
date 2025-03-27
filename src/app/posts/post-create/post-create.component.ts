@@ -1,4 +1,5 @@
 import {  Component } from "@angular/core";
+import { PostService } from "../../services/post.service";
 
 @Component({
   selector: "app-post-create",
@@ -9,11 +10,13 @@ export class PostCreatePage {
   enteredValue: string = "";
   newPost: string = "";
 
-  constructor() {}
+  constructor(private postService: PostService) {}
 
   addPost() {
     setTimeout(() => {
-        this.newPost = this.enteredValue
+        // this.newPost = this.enteredValue
+        this.postService.updatePost(this.enteredValue);
+        this.enteredValue = ''
       });
   }
 }
