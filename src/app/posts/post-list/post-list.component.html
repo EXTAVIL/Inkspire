@@ -1,9 +1,9 @@
 <mat-accordion>
     <mat-expansion-panel>
       <mat-expansion-panel-header>
-        <span>I'm the expansion title</span>
+        <p *ngIf="latestPost"> {{ latestPost | trimText: 10}}</p>
       </mat-expansion-panel-header>
-      <p>Expanded content</p>
+      <p>{{ latestPost }}</p>
     </mat-expansion-panel>
   </mat-accordion>
   
