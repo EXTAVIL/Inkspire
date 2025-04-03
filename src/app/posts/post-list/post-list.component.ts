@@ -10,11 +10,6 @@ import { PostService } from "../../services/post.service";
 export class PostListPage {
     
     latestPost: any
-    posts = [
-        {title: 'First Post', content: 'This is my first post to render'},
-        {title: 'Second Post', content: 'This is my Second post to render'},
-        {title: 'Third Post', content: 'This is my Third post to render'}
-    ]
 
     constructor(private postService: PostService) {
     }
