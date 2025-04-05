@@ -1,5 +1,7 @@
 import {  Component, EventEmitter, Output } from "@angular/core";
 import { PostService } from "../../services/post.service";
+import { Post } from "../posts.model";
+
 
 @Component({
   selector: "app-post-create",
@@ -14,7 +16,7 @@ export class PostCreatePage {
   constructor(private postService: PostService) {}
 
   addPost() {
-    const post = {
+    const post: Post = {
       title: this.enteredTitle,
       content: this.enteredContent
     }

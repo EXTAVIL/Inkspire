@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { PostCreatePage } from "./posts/post-create/post-create.component";
 
 @Component({
   selector: 'app-root',
