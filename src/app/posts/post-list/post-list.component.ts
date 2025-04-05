@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { PostService } from "../../services/post.service";
 
 @Component({
@@ -10,14 +10,15 @@ import { PostService } from "../../services/post.service";
 export class PostListPage {
     
     latestPost: any
-
+    // posts = [
+    //     {title: 'First Post', content: 'This is my first post to render'},
+    //     {title: 'Second Post', content: 'This is my Second post to render'},
+    //     {title: 'Third Post', content: 'This is my Third post to render'}
+    // ]
+    @Input() posts = []
     constructor(private postService: PostService) {
     }
 
-    ngOnInit() {
-        this.postService.post$.subscribe((post) => {
-            this.latestPost = post
-        })
-    }
+ 
 
 }

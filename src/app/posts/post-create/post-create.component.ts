@@ -1,4 +1,4 @@
-import {  Component } from "@angular/core";
+import {  Component, EventEmitter, Output } from "@angular/core";
 import { PostService } from "../../services/post.service";
 
 @Component({
@@ -7,16 +7,18 @@ import { PostService } from "../../services/post.service";
   styleUrls: ["./post-create.component.scss"]
 })
 export class PostCreatePage {
-  enteredValue: string = "";
-  newPost: string = "";
+  enteredTitle = "";
+  enteredContent = "";
+  @Output() postCreate = new EventEmitter();
 
   constructor(private postService: PostService) {}
 
   addPost() {
-    setTimeout(() => {
-        // this.newPost = this.enteredValue
-        this.postService.updatePost(this.enteredValue);
-        this.enteredValue = ''
-      });
+    const post = {
+      title: this.enteredTitle,
+      content: this.enteredContent
+    }
+    this.postCreate.emit(post);
+  
   }
 }
