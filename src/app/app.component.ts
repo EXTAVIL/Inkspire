@@ -7,5 +7,8 @@ import { PostCreatePage } from "./posts/post-create/post-create.component";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'app';
+  storedPosts = []
+  addedPost(post) {
+  this.storedPosts.push(post);
+  }
 }

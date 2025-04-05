@@ -1,14 +1,13 @@
-
-  <!-- <mat-form-field class="full-width">
-    <div class="textArea">
-        <textarea matInput rows="8" [(ngModel)]="enteredValue"></textarea>              
-      </div>
-</mat-form-field> -->
 <mat-card>
+  <mat-form-field >
+    <div class="title">
+        <input matInput  [(ngModel)]="enteredTitle">  
+      </div>          
+</mat-form-field>
 <mat-form-field>
   <!-- <mat-label>Leave your thoughts here....</mat-label> -->
   <div class="input-box">
-  <textarea matInput rows="8" [(ngModel)]="enteredValue" placeholder="Ex. It makes me feel..."></textarea>
+  <textarea matInput rows="6" [(ngModel)]="enteredContent" placeholder="Ex. It makes me feel..."></textarea>
 </div>
 </mat-form-field>
 </mat-card>
