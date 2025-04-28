@@ -1,4 +1,6 @@
-# Oc
+# Inkspire Project
+
+Please refer DeepWiki for the Architecture https://deepwiki.com/EXTAVIL/Inkspire
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
 use node version 20
